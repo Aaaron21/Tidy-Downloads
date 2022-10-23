@@ -19,4 +19,4 @@
 notes:
 - If your downloads folder is not located as seen in the code, locate it and edit the selected line:
   ![ObMj9BjrQ7](https://user-images.githubusercontent.com/115464530/197404377-c5b57c9e-affc-4c15-a0e8-6a9c9186c906.png)
-  ( each backslah \ has to be doubled \\\ as it's an escape character. )
+  ( each backslash \ has to be doubled \\\ as it's an escape character. )
