@@ -39,9 +39,14 @@ def move_files():
         # try to move the file into it's folder
         try:
             move(source, destination)
-        # if it fails, remove it
+        # if it fails
         except:
-            remove(source)
+            try:
+                remove(source)
+            except:
+                print(f"{source} is currently in use by a process.")
+                input("Press any key to continue")
+                continue
 
 def main():
     create_lists()
