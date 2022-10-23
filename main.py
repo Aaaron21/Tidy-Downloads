@@ -1,8 +1,10 @@
 from shutil import move
 from os import listdir, path, mkdir, remove
+from tkinter.filedialog import askdirectory
 
 # define downloads folder path
-DOWNLOADS = "C:\\Users\\aronk\\Downloads\\"
+print("Please select your downloads folder")
+DOWNLOADS = askdirectory()
 
 FILE_LIST = []
 EXTENSION_LIST = []
@@ -22,7 +24,7 @@ def create_lists():
 # create folders for each type of file extension
 def create_folders():
     for extension in EXTENSION_LIST:
-        destination = f"{DOWNLOADS}\\{extension}"
+        destination = f"{DOWNLOADS}/{extension}"
         # check if directory exits. If it doesn't, then create it
         if path.isdir(destination):
             continue
@@ -32,9 +34,9 @@ def create_folders():
 # move each file to the folder with the name of it's extension
 def move_files():
     for file in FILE_LIST:
-        source = f"{DOWNLOADS}\\{file}"
+        source = f"{DOWNLOADS}/{file}"
         file_type = file.split('.')[-1]
-        destination = f"{DOWNLOADS}\\{file_type}"
+        destination = f"{DOWNLOADS}/{file_type}"
 
         # try to move the file into it's folder
         try:
