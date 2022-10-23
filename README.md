@@ -1,7 +1,4 @@
-# Tidy-Downloads
-## Are you tired of your messy downloads folder? Worry not! This tool will clean it up in seconds!
-
-## How to use?
+# How to use?
 
 1. Download the contents of the repository
 2. Make sure the latest version of [Python](https://www.python.org/downloads/) is installed on your computer and is in your PATH.
