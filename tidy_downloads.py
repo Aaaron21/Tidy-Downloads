@@ -1,6 +1,5 @@
 import shutil
 import os
-from pprint import pprint
 
 # define downloads folder path
 DOWNLOADS = "C:\\Users\\aronk\\Downloads\\"
@@ -33,4 +32,10 @@ for file in FILE_LIST:
     source = f"{DOWNLOADS}\\{file}"
     file_type = file.split('.')[-1]
     destination = f"{DOWNLOADS}\\{file_type}"
-    shutil.move(source, destination) 
+
+    # try to move the file into it's folder
+    try:
+        shutil.move(source, destination)
+    # if it fails, remove it
+    except:
+        os.remove(source)
