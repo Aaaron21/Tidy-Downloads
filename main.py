@@ -7,8 +7,8 @@ DOWNLOADS = "C:\\Users\\aronk\\Downloads\\"
 FILE_LIST = []
 EXTENSION_LIST = []
 
+# create a list of all the files in the specified folder
 def create_lists():
-    # create a list of all the files in the specified folder
     for file in listdir(DOWNLOADS):
         FILE_LIST.append(file)
 
@@ -19,8 +19,8 @@ def create_lists():
         if EXTENSION_LIST.count(item_extension) < 1:
             EXTENSION_LIST.append(item_extension)
 
+# create folders for each type of file extension
 def create_folders():
-    # create folders for each type of file extension
     for extension in EXTENSION_LIST:
         destination = f"{DOWNLOADS}\\{extension}"
         # check if directory exits. If it doesn't, then create it
@@ -29,8 +29,8 @@ def create_folders():
         else:
             mkdir(destination)
 
+# move each file to the folder with the name of it's extension
 def move_files():
-    # move each file to the folder with the name of it's extension
     for file in FILE_LIST:
         source = f"{DOWNLOADS}\\{file}"
         file_type = file.split('.')[-1]
