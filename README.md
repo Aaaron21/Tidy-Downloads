@@ -4,10 +4,10 @@
 ## How to use?
 
 1. Download the contents of the repository
-2. Make sure the latest version of Python is installed on your computer.
-3. Right click on the "run.bat" file and edit it with your preferred text editor.
-4. Navigate to your python executable and copy it as path.
-5. Open the "run.bat" file, select the first part (as seen below) and paste the copied path.
+2. Make sure the latest version of [Python](https://www.python.org/downloads/) is installed on your computer and is in your PATH.
+4. Right click on the "run.bat" file and edit it with your preferred text editor.
+5. Navigate to your python executable and copy it as path.
+6. Open the "run.bat" file, select the first part (as seen below) and paste the copied path.
 
 ![4mlDYnjVyU](https://user-images.githubusercontent.com/115464530/197403837-1cba3128-2237-4db4-ba09-dddaa4fe532a.png)
 
