@@ -1,9 +1,0 @@
-{
-    "configurations": [
-        {
-            "type": "python",
-            "name": "tidy_downloads",
-            "arguments": ["main.py", "1", "2", "3"]
-        }
-    ]
-}
